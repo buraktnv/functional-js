@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Filter Card</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="filter-card" class="filter-card">
+        <p class="title">Filter</p>
+        <div class="filter-card__item">
+          <label for="location" class="title -sub">Location</label>
+          <input
+            type="text"
+            name="location"
+            class="input -location"
+            id="location"
+            placeholder="Eg. London"
+          />
+        </div>
+        <div class="filter-card__item">
+          <label class="title -sub">Experience Level</label>
+          <div class="filter-card__input-group">
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                id="level-1"
+                name="level"
+                value="1-2"
+              />
+              <label for="level-1"> 1-2 Years Experience</label>
+            </div>
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                id="level-2"
+                name="level"
+                value="3-5"
+              />
+              <label for="level-2"> 3-5 Years Experience</label>
+            </div>
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                id="level-3"
+                name="level"
+                value="6-8"
+              />
+              <label for="level-3"> 6-8 Years Experience</label>
+            </div>
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                id="level-4"
+                name="level"
+                value="9+"
+              />
+              <label for="level-4"> 9+ Years Experience</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-card__item">
+          <label class="title -sub">Target</label>
+          <div class="filter-card__input-group">
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                name="target"
+                id="freelancer"
+                value="freelancer"
+              />
+              <label for="freelancer">Freelancer</label>
+            </div>
+            <div class="input-group">
+              <input
+                class="input -checkbox"
+                type="checkbox"
+                name="target"
+                id="agency"
+                value="agency"
+              />
+              <label for="agency">Agency</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+    <script src="./assets/js/filter.js"></script>
+  </body>
+</html>

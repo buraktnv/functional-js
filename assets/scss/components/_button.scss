@@ -1,0 +1,18 @@
+.button {
+  width: max-content;
+  padding: $sm $xl;
+  color: $blueHaze;
+  background-color: $martinique-bg;
+  border-radius: $r-sm;
+  @include border(2px, solid, $martinique);
+  border-radius: 5px;
+  font-size: $md;
+  cursor: pointer;
+  &:hover {
+    box-shadow: $shadow;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}

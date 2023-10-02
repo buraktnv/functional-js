@@ -1,0 +1,38 @@
+.wrapper {
+  @include flex(row, center, center);
+  width: 100%;
+  height: 100vh;
+}
+
+.filter-card {
+  @include flex(column, baseline, stretch, 40px);
+  color: $blueHaze;
+  padding: $xxxl;
+  border-radius: $r-xl;
+  background-color: $mirage;
+  font-family: $first-font;
+  font-weight: $font-semibold;
+  position: relative;
+
+  &__item {
+    @include flex(column, baseline, stretch, 24px);
+  }
+
+  &__input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $xs;
+  }
+
+  &:before {
+    content: "";
+    left: 5%;
+    top: -5%;
+    position: absolute;
+    z-index: -1;
+    width: 90%;
+    min-height: 110%;
+    background-color: #4744c5;
+    border-radius: $r-md;
+  }
+}

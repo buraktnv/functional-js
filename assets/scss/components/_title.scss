@@ -1,0 +1,10 @@
+.title {
+  font-size: 22px;
+  font-family: $second-font;
+  font-weight: $font-bold;
+
+  &.-sub {
+    font-size: $md;
+    font-family: $first-font;
+  }
+}

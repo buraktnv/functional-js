@@ -1,0 +1,50 @@
+.input {
+  &.-location {
+    font-size: $md;
+    color: $blueHaze;
+    background-color: $martinique-bg;
+    background-image: url("/assets/icons/location.svg");
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    background-size: $lg $lg;
+    @include border(2px, solid, $martinique);
+    border-radius: 5px;
+    padding: $sm;
+    padding-left: 57px;
+
+    &::placeholder {
+      color: $kimberly;
+    }
+  }
+  &.-checkbox {
+    width: 30px;
+    height: 30px;
+    background-color: $martinique-bg;
+    cursor: pointer;
+    @include border(2px, solid, $martinique, 5px);
+
+    &:checked {
+      accent-color: $downriver;
+      transition: all 0.5s;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        height: 15px;
+        width: 7px;
+        border-right: 3px solid $ecru-white;
+        border-bottom: 3px solid $ecru-white;
+        transform: rotate(40deg);
+      }
+    }
+  }
+
+  &-group {
+    @include flex(row, baseline, center, 12px);
+    cursor: pointer;
+    user-select: none;
+  }
+}
